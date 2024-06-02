@@ -1,8 +1,8 @@
 <?php
 
-$dns = "mysql:host=sql208.infinityfree.com;dbname=if0_36644442_lockersdb"; 
-$user= "if0_36644442"; // root is default value until you change it 
-$pass= "lockers2024";
+$dns = "mysql:host=localhost;dbname=lockerbookingsystemdb"; 
+$user= "root"; // root is default value until you change it 
+$pass= "Ab*015*200#";
 
 // Now we will check if the connection is ok or no
 
