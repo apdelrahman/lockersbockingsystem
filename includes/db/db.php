@@ -1,9 +1,9 @@
 <?php
 
-$serverName ="sql208.infinityfree.com";
-$userName ="if0_36644442";
-$password ="lockers2024";
-$dbName ="if0_36644442_lockersdb";
+$serverName = "localhost";
+$userName = "root";
+$password = "Ab*015*200#";
+$dbName = "lockerbookingsystemdb";
 
 try {
     $conn = new PDO("mysql:host=$serverName;dbname=$dbName", $userName, $password);
