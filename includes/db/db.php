@@ -1,15 +1,20 @@
 <?php
 
-$serverName ="sql208.infinityfree.com";
-$userName ="if0_36644442";
-$password ="lockers2024";
-$dbName ="if0_36644442_lockersdb";
+// $serverName = "127.0.0.1"; // Use localhost IP address
+// $userName = "root";
+// $password = "Ab*015*200#";
+// $dbName = "lockerbookingsystemdb";
+
+$serverName = getenv('DB_HOST');
+$userName = getenv('DB_USER');
+$password = getenv('DB_PASS');
+$dbName = getenv('DB_NAME');
 
 try {
     $conn = new PDO("mysql:host=$serverName;dbname=$dbName", $userName, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
-    echo "Connection has error: " . $e->getMessage();
+    echo "Connection failed: " . $e->getMessage();
 }
 
 function addData($conn, $tableName, $data)
