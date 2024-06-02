@@ -1,6 +1,6 @@
 <?php
 
-$dns = "mysql:host=localhost;dbname=lockerbookingsystemdb"; 
+$dns = "mysql:host=127.0.0.1;dbname=lockerbookingsystemdb"; 
 $user= "root"; // root is default value until you change it 
 $pass= "Ab*015*200#";
 
@@ -15,4 +15,3 @@ try{
 }
 
 ?>
-
